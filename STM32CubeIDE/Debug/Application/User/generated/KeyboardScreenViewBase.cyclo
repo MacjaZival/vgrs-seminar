@@ -1,0 +1,9 @@
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:115:18:virtual void touchgfx::Screen::tearDownScreen()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:144:18:virtual void touchgfx::Screen::handleTickEvent()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	1
+C:/TouchGFXProjects/KeyboardTest/TouchGFX/generated/gui_generated/src/keyboardscreen_screen/KeyboardScreenViewBase.cpp:14:1:KeyboardScreenViewBase::~KeyboardScreenViewBase()	1
+C:/TouchGFXProjects/KeyboardTest/TouchGFX/generated/gui_generated/src/keyboardscreen_screen/KeyboardScreenViewBase.cpp:19:6:virtual void KeyboardScreenViewBase::setupScreen()	1
+C:/TouchGFXProjects/KeyboardTest/TouchGFX/generated/gui_generated/src/keyboardscreen_screen/KeyboardScreenViewBase.cpp:14:1:virtual KeyboardScreenViewBase::~KeyboardScreenViewBase()	1
+C:/TouchGFXProjects/KeyboardTest/TouchGFX/generated/gui_generated/src/keyboardscreen_screen/KeyboardScreenViewBase.cpp:24:6:virtual void KeyboardScreenViewBase::goToTouchpadScreen()	1
+C:/TouchGFXProjects/KeyboardTest/TouchGFX/generated/gui_generated/src/keyboardscreen_screen/KeyboardScreenViewBase.cpp:7:1:KeyboardScreenViewBase::KeyboardScreenViewBase()	1

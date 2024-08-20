@@ -1,0 +1,5 @@
+C:/TouchGFXProjects/KeyboardTest/USB_DEVICE/App/usb_device.c:56:6:MX_USB_DEVICE_InitKeyboard	4
+C:/TouchGFXProjects/KeyboardTest/USB_DEVICE/App/usb_device.c:82:6:MX_USB_DEVICE_InitMouse	4
+C:/TouchGFXProjects/KeyboardTest/USB_DEVICE/App/usb_device.c:108:6:MX_USB_DEVICE_Deinit	3
+C:/TouchGFXProjects/KeyboardTest/USB_DEVICE/App/usb_device.c:120:6:SendKeyboardEvent	1
+C:/TouchGFXProjects/KeyboardTest/USB_DEVICE/App/usb_device.c:124:6:SendMouseEvent	1

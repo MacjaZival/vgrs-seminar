@@ -1,0 +1,13 @@
+C:/TouchGFXProjects/KeyboardTest/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Src/usbd_hid.c:924:16:USBD_HID_DataIn	1
+C:/TouchGFXProjects/KeyboardTest/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Src/usbd_hid.c:941:17:USBD_HID_GetDeviceQualifierDesc	1
+C:/TouchGFXProjects/KeyboardTest/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Src/usbd_hid.c:809:17:USBD_HID_GetFSCfgDescKeyboard	2
+C:/TouchGFXProjects/KeyboardTest/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Src/usbd_hid.c:851:17:USBD_HID_GetHSCfgDescKeyboard	2
+C:/TouchGFXProjects/KeyboardTest/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Src/usbd_hid.c:830:17:USBD_HID_GetFSCfgDescMouse	2
+C:/TouchGFXProjects/KeyboardTest/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Src/usbd_hid.c:876:17:USBD_HID_GetHSCfgDescMouse	2
+C:/TouchGFXProjects/KeyboardTest/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Src/usbd_hid.c:488:16:USBD_HID_SetupKeyboard	18
+C:/TouchGFXProjects/KeyboardTest/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Src/usbd_hid.c:614:16:USBD_HID_SetupMouse	18
+C:/TouchGFXProjects/KeyboardTest/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Src/usbd_hid.c:457:16:USBD_HID_DeInit	2
+C:/TouchGFXProjects/KeyboardTest/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Src/usbd_hid.c:410:16:USBD_HID_Init	2
+C:/TouchGFXProjects/KeyboardTest/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Src/usbd_hid.c:899:17:USBD_HID_GetOtherSpeedCfgDesc	2
+C:/TouchGFXProjects/KeyboardTest/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Src/usbd_hid.c:746:9:USBD_HID_SendReport	4
+C:/TouchGFXProjects/KeyboardTest/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Src/usbd_hid.c:779:10:USBD_HID_GetPollingInterval	1

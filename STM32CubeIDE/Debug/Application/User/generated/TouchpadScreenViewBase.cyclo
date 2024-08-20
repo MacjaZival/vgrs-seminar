@@ -1,0 +1,13 @@
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:315:18:virtual void touchgfx::Drawable::setX(int16_t)	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:327:18:virtual void touchgfx::Drawable::setY(int16_t)	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:356:18:virtual void touchgfx::Drawable::setWidth(int16_t)	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:368:18:virtual void touchgfx::Drawable::setHeight(int16_t)	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:115:18:virtual void touchgfx::Screen::tearDownScreen()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:144:18:virtual void touchgfx::Screen::handleTickEvent()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	1
+C:/TouchGFXProjects/KeyboardTest/TouchGFX/generated/gui_generated/src/touchpadscreen_screen/TouchpadScreenViewBase.cpp:19:1:TouchpadScreenViewBase::~TouchpadScreenViewBase()	1
+C:/TouchGFXProjects/KeyboardTest/TouchGFX/generated/gui_generated/src/touchpadscreen_screen/TouchpadScreenViewBase.cpp:24:6:virtual void TouchpadScreenViewBase::setupScreen()	1
+C:/TouchGFXProjects/KeyboardTest/TouchGFX/generated/gui_generated/src/touchpadscreen_screen/TouchpadScreenViewBase.cpp:19:1:virtual TouchpadScreenViewBase::~TouchpadScreenViewBase()	1
+C:/TouchGFXProjects/KeyboardTest/TouchGFX/generated/gui_generated/src/touchpadscreen_screen/TouchpadScreenViewBase.cpp:29:6:virtual void TouchpadScreenViewBase::goToKeyboardScreen()	1
+C:/TouchGFXProjects/KeyboardTest/TouchGFX/generated/gui_generated/src/touchpadscreen_screen/TouchpadScreenViewBase.cpp:8:1:TouchpadScreenViewBase::TouchpadScreenViewBase()	1

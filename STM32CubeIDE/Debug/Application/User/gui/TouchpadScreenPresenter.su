@@ -1,0 +1,10 @@
+../../TouchGFX/gui/include/gui/touchpadscreen_screen/TouchpadScreenPresenter.hpp:33:13:TouchpadScreenPresenter::~TouchpadScreenPresenter()	0	static
+C:/TouchGFXProjects/KeyboardTest/TouchGFX/gui/src/touchpadscreen_screen/TouchpadScreenPresenter.cpp:10:6:virtual void TouchpadScreenPresenter::activate()	0	static
+C:/TouchGFXProjects/KeyboardTest/TouchGFX/gui/src/touchpadscreen_screen/TouchpadScreenPresenter.cpp:20:6:virtual void TouchpadScreenPresenter::HandleButtonPressed()	0	static
+../../TouchGFX/gui/include/gui/touchpadscreen_screen/TouchpadScreenPresenter.hpp:33:13:virtual TouchpadScreenPresenter::~TouchpadScreenPresenter()	8	static
+../../TouchGFX/gui/include/gui/touchpadscreen_screen/TouchpadScreenPresenter.hpp:33:13:virtual void* TouchpadScreenPresenter::_ZThn4_N23TouchpadScreenPresenterD1Ev()	0	static
+../../TouchGFX/gui/include/gui/touchpadscreen_screen/TouchpadScreenPresenter.hpp:33:13:virtual void* TouchpadScreenPresenter::_ZThn4_N23TouchpadScreenPresenterD0Ev()	8	static
+../../TouchGFX/gui/include/gui/touchpadscreen_screen/TouchpadScreenPresenter.hpp:29:10:virtual void TouchpadScreenPresenter::_ZThn4_N23TouchpadScreenPresenter19HandleButtonPressedEv()	0	static
+C:/TouchGFXProjects/KeyboardTest/TouchGFX/gui/src/touchpadscreen_screen/TouchpadScreenPresenter.cpp:4:1:TouchpadScreenPresenter::TouchpadScreenPresenter(TouchpadScreenView&)	4	static
+C:/TouchGFXProjects/KeyboardTest/TouchGFX/gui/src/touchpadscreen_screen/TouchpadScreenPresenter.cpp:25:6:void TouchpadScreenPresenter::handleMouseMovement(uint8_t, uint8_t)	0	static
+C:/TouchGFXProjects/KeyboardTest/TouchGFX/gui/src/touchpadscreen_screen/TouchpadScreenPresenter.cpp:30:6:void TouchpadScreenPresenter::handleMouseClick(uint8_t)	0	static
