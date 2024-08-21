@@ -1,6 +1,6 @@
 C:/TouchGFXProjects/KeyboardTest/TouchGFX/gui/src/model/Model.cpp:7:1:Model::Model()	0	static
-C:/TouchGFXProjects/KeyboardTest/TouchGFX/gui/src/model/Model.cpp:12:6:void Model::tick()	8	static
-C:/TouchGFXProjects/KeyboardTest/TouchGFX/gui/src/model/Model.cpp:23:6:void Model::toggleKeyboardModifier(uint8_t)	0	static
-C:/TouchGFXProjects/KeyboardTest/TouchGFX/gui/src/model/Model.cpp:29:6:void Model::handleNormalKey(uint16_t)	16	static
-C:/TouchGFXProjects/KeyboardTest/TouchGFX/gui/src/model/Model.cpp:48:6:void Model::handleMouseMovement(uint8_t, uint8_t)	16	static
-C:/TouchGFXProjects/KeyboardTest/TouchGFX/gui/src/model/Model.cpp:66:6:void Model::handleMouseClick(uint8_t)	16	static
+C:/TouchGFXProjects/KeyboardTest/TouchGFX/gui/src/model/Model.cpp:12:6:void Model::tick()	16	static
+C:/TouchGFXProjects/KeyboardTest/TouchGFX/gui/src/model/Model.cpp:25:6:void Model::toggleKeyboardModifier(uint8_t)	0	static
+C:/TouchGFXProjects/KeyboardTest/TouchGFX/gui/src/model/Model.cpp:31:6:void Model::handleNormalKey(uint16_t)	16	static
+C:/TouchGFXProjects/KeyboardTest/TouchGFX/gui/src/model/Model.cpp:50:6:void Model::handleMouseMovement(uint8_t, uint8_t)	16	static
+C:/TouchGFXProjects/KeyboardTest/TouchGFX/gui/src/model/Model.cpp:68:6:void Model::handleMouseClick(uint8_t)	16	static

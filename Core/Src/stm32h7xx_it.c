@@ -34,6 +34,7 @@
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
 extern osMessageQueueId_t userButtonQueueHandle;
+extern osMessageQueueId_t usbSwapQueueHandle;
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/

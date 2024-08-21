@@ -12,6 +12,7 @@ extern "C"
 {
 	extern osMessageQueueId_t userButtonQueueHandle;
 	extern osMessageQueueId_t usbEventQueueHandle;
+	extern osMessageQueueId_t usbSwapQueueHandle;
 }
 #endif
 

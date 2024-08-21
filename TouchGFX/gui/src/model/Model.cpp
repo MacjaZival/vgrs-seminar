@@ -16,6 +16,8 @@ void Model::tick()
 	osStatus_t status = osMessageQueueGet(userButtonQueueHandle, &state, NULL, 0);
 	if(status == osOK) {
 		modelListener->HandleButtonPressed();
+		static uint8_t swap = 1;
+		osMessageQueuePut(usbSwapQueueHandle, &swap, 0U, 0U);
 	}
 #endif
 }

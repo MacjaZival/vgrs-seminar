@@ -67,7 +67,7 @@ osThreadId_t defaultTaskHandle;
 const osThreadAttr_t defaultTask_attributes = {
   .name = "defaultTask",
   .stack_size = 128 * 4,
-  .priority = (osPriority_t) osPriorityNormal,
+  .priority = (osPriority_t) osPriorityHigh1,
 };
 /* Definitions for GUITask */
 osThreadId_t GUITaskHandle;
@@ -94,7 +94,10 @@ const osMessageQueueAttr_t usbEventQueue_attributes = {
   .name = "usbEventQueue"
 };
 /* USER CODE BEGIN PV */
-
+osMessageQueueId_t usbSwapQueueHandle;
+const osMessageQueueAttr_t usbSwapQueueHandle_attributes = {
+  .name = "usbSwapQueue"
+};
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -199,8 +202,10 @@ int main(void)
   /* creation of usbEventQueue */
   usbEventQueueHandle = osMessageQueueNew (16, sizeof(USBEvent_t), &usbEventQueue_attributes);
 
+
+
   /* USER CODE BEGIN RTOS_QUEUES */
-  /* add queues, ... */
+  usbSwapQueueHandle = osMessageQueueNew (16, sizeof(uint8_t), &usbSwapQueueHandle_attributes);
   /* USER CODE END RTOS_QUEUES */
 
   /* Create the thread(s) */
@@ -682,10 +687,26 @@ void StartDefaultTask(void *argument)
 {
   /* init code for USB_DEVICE */
   /* USER CODE BEGIN 5 */
+  MX_USB_DEVICE_InitKeyboard();
 
+  uint8_t deviceMode = 1; // 1 is keyboard 0 is mouse
+  uint8_t status;
+  uint8_t tmp;
   /* Infinite loop */
   for(;;)
   {
+	status = osMessageQueueGet(usbSwapQueueHandle, &tmp, NULL, osWaitForever);
+	if(status == osOK) {
+		if(deviceMode != 0) {
+			MX_USB_DEVICE_Deinit();
+			MX_USB_DEVICE_InitMouse();
+			deviceMode = 0;
+		} else {
+			MX_USB_DEVICE_Deinit();
+			MX_USB_DEVICE_InitKeyboard();
+			deviceMode = 1;
+		}
+	}
     osDelay(100);
   }
   /* USER CODE END 5 */
@@ -701,8 +722,7 @@ void StartDefaultTask(void *argument)
 void StartTaskUSB(void *argument)
 {
   /* USER CODE BEGIN StartTaskUSB */
-  MX_USB_DEVICE_InitKeyboard();
-  uint8_t deviceMode = 1; // 1 is keyboard 0 is mouse
+
   uint8_t status;
   USBEvent_t event;
   for(;;)
@@ -710,11 +730,6 @@ void StartTaskUSB(void *argument)
 	status = osMessageQueueGet(usbEventQueueHandle, &event, NULL, osWaitForever);
 	if(status == osOK) {
 		if(event.event_type == USB_EVENT_MOUSE){
-			if(deviceMode != 0) {
-				MX_USB_DEVICE_Deinit();
-				MX_USB_DEVICE_InitMouse();
-				deviceMode = 0;
-			}
 			GUIMouseEvent_t* guiMouseEvent = (GUIMouseEvent_t*) event.event;
 
 			mouseEvent_t mouseEvent = {0, 0, 0, 0, 0};
@@ -729,11 +744,6 @@ void StartTaskUSB(void *argument)
 				SendMouseEvent(clearEvent);
 			}
 		} else {
-			if (deviceMode != 1) {
-				MX_USB_DEVICE_Deinit();
-				MX_USB_DEVICE_InitKeyboard();
-				deviceMode = 1;
-			}
 			GUIKeyboardEvent_t* guiKeyboardEvent = (GUIKeyboardEvent_t*) event.event;
 			keyboardEvent_t keyboardEvent = {0, 0, 0, 0, 0, 0, 0, 0};
 			keyboardEvent.MODIFIER = guiKeyboardEvent->MODIFIERS;
