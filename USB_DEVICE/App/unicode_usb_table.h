@@ -58,7 +58,7 @@ static const UsbMapping_t usbMappingHID[56] = {
     { 61, 46 }, // =
     { 91, 47 }, // [
     { 93, 48 }, // ]
-    { 37, 49 }, // (backslash)
+    { 92, 49 }, // (backslash)
     { 58, 51 }, // ;
     { 39, 52 }, // '
     { 44, 54 }, // ,
